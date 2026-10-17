@@ -246,7 +246,7 @@ Route::post('/storeOrdinateur_agent', [\App\Http\Controllers\api\OrdinateurAPICo
 //_______________________________________________________________________________-
 // Nouvel magasin
 Route::post('/storeMagasin_administrateur', [\App\Http\Controllers\api\MagasinAPIController::class, 'storeMagasin_administrateur'])->name('storeMagasin_administrateur');
-Route::post('/storeMagasin_agent', [\App\Http\Controllers\api\MagasinAPIController::class, 'storeMagasin_administrateur'])->name('storeMagasin_administrateur');
+Route::post('/storeMagasin_agent', [\App\Http\Controllers\api\MagasinAPIController::class, 'storeMagasin_administrateur'])->name('storeMagasin_agent');
 //_______________________________________________________________________________-
 
 
@@ -372,7 +372,7 @@ Route::get("/searchService1_client", [\App\Http\Controllers\api\Service1APIContr
 //_______________________________________________________________________________-
 // Recherche de la electromenager
 Route::get("/searchLElectromenager_administrateur", [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'searchLElectromenager_administrateur'])->name('searchLElectromenager_administrateur');
-Route::get("/searchElectromenager_agent", [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'searchElectromenager_agent'])->name('searchElectromenager_agent');
+// Route::get("/searchElectromenager_agent", [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'searchElectromenager_agent'])->name('searchElectromenager_agent');
 Route::get("/searchElectromenager_client", [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'searchElectromenager_agent'])->name('searchElectromenager_agent');
 //_______________________________________________________________________________-
 
@@ -706,7 +706,8 @@ Route::post('/updateLocalisation_agent/{id_localisation}', [\App\Http\Controller
 //_______________________________________________________________________________-
 // Mise à jour de la electromenager
 Route::post('/updateElectromenager_administrateur/{id_electromenager}', [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'updateElectromenager_administrateur'])->name('updateElectromenager_administrateur');
-Route::post('/updateElectromenager_agent/{id_electromenager}', [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'updateElectromenager_administrateur'])->name('updateElectromenager_administrateur');
+//Route::post('/updateElectromenager_agent/{id_electromenager}', [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'updateElectromenager_administrateur'])->name('updateElectromenager_administrateur');
+Route::post('/updateElectromenager_agent/{id_electromenager}', [\App\Http\Controllers\api\ElectromenagerAPIController::class, 'updateElectromenager_agent'])->name('updateElectromenager_agent');
 //_______________________________________________________________________________-
 
 
