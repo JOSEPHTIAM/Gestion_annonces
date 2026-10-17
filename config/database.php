@@ -73,7 +73,8 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => '',
+            // 'prefix' => '',
+            'prefix' => 'gpa_', // <-- Ajoutez ce préfixe
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => 'prefer',
